@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="buildings">
+        <item>5号楼</item>
+        <item>13号楼</item>
+        <item>14号楼</item>
+    </string-array>
+</resources>
