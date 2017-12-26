@@ -30,15 +30,33 @@ public class SelectHow extends Activity implements View.OnClickListener{
         btn4 = (Button)findViewById(R.id.select_button_4);
 
         btn1.setOnClickListener(this);
-        //btn2.setOnClickListener(this);
-        //btn3.setOnClickListener(this);
-        //btn4.setOnClickListener(this);
+        btn2.setOnClickListener(this);
+        btn3.setOnClickListener(this);
+        btn4.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.select_button_1) {
             Intent i = new Intent(SelectHow.this, ChooseDormForOne.class);
+            Log.d("what", "111");
+            startActivityForResult(i, 1);
+            Log.d("what", "122");
+        }
+        if(v.getId() == R.id.select_button_2) {
+            Intent i = new Intent(SelectHow.this, ChooseDormForTwo.class);
+            Log.d("what", "111");
+            startActivityForResult(i, 1);
+            Log.d("what", "122");
+        }
+        if(v.getId() == R.id.select_button_3) {
+            Intent i = new Intent(SelectHow.this, ChooseDormForTri.class);
+            Log.d("what", "111");
+            startActivityForResult(i, 1);
+            Log.d("what", "122");
+        }
+        if(v.getId() == R.id.select_button_4) {
+            Intent i = new Intent(SelectHow.this, ChooseDormForMore.class);
             Log.d("what", "111");
             startActivityForResult(i, 1);
             Log.d("what", "122");

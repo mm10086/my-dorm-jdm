@@ -33,6 +33,7 @@ public class SuccessNotify extends Activity implements View.OnClickListener{
     public void onClick(View v) {
         if (v.getId() == R.id.return_button){
             Intent i = new Intent(SuccessNotify.this, LoginActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             Log.d("what", "111");
             startActivityForResult(i, 1);
             Log.d("what", "122");
